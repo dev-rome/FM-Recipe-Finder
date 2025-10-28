@@ -33,8 +33,18 @@
   cursor: not-allowed;
 }
 
+.linkButton.secondary {
+  margin-bottom: var(--spacing-500);
+}
+
+@media screen and (min-width: 1280px) {
+  .linkButton.secondary {
+    margin-bottom: var(--spacing-1000);
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  .linkButton {
+  .linkButton.primary {
     width: 100%;
     text-align: center;
     margin-top: var(--spacing-250);

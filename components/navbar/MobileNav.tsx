@@ -5,6 +5,7 @@ import Image from "next/image";
 import { navLinks } from "@/constants/navigation";
 import NavItems from "./NavItems";
 import LinkButton from "../link-button/LinkButton";
+import styles from "./MobileNav.module.css";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,9 @@ export default function MobileNav() {
   };
 
   return (
-    <nav className="relative flex items-center justify-between border-b border-(--neutral-300) px-(--spacing-200) py-(--spacing-250) lg:hidden">
+    <nav
+      className={`relative flex items-center justify-between xl:hidden ${styles.nav}`}
+    >
       <Image
         src="/images/logo.svg"
         alt="Recipe Finder Logo"
@@ -22,7 +25,7 @@ export default function MobileNav() {
         height={32}
       />
       <button
-        className="flex h-(--spacing-500) w-(--spacing-500) items-center justify-center bg-(--neutral-300)"
+        className={`flex items-center justify-center ${styles.menuButton}`}
         onClick={handleToggle}
       >
         <Image
@@ -33,8 +36,10 @@ export default function MobileNav() {
         />
       </button>
       {isOpen && (
-        <div className="absolute top-full right-4 left-4 rounded-(--radius-8) bg-(--neutral-0) p-(--spacing-100) shadow-[0_12px_22px_-12px_rgba(57,88,82,0.3)] md:right-8 md:left-8">
-          <ul className="flex flex-col gap-(--spacing-250)">
+        <div
+          className={`absolute top-full right-4 left-4 z-10 md:right-8 md:left-8 ${styles.dropdown}`}
+        >
+          <ul className={`flex flex-col ${styles.dropdownList}`}>
             {navLinks.map((link) => (
               <NavItems key={link.href} href={link.href} isActive={false}>
                 {link.children}

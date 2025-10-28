@@ -3,7 +3,7 @@ import { Nunito, Nunito_Sans } from "next/font/google";
 export const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800"],
   display: "swap",
   preload: true,
   fallback: ["system-ui", "arial"],

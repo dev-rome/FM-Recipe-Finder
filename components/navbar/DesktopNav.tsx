@@ -5,19 +5,22 @@ import { navLinks } from "@/constants/navigation";
 import NavItems from "./NavItems";
 import LinkButton from "../link-button/LinkButton";
 import { usePathname } from "next/navigation";
+import styles from "./DesktopNav.module.css";
 
 export default function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden items-center justify-between border-b border-(--neutral-300) px-(--spacing-800) py-(--spacing-250) lg:flex">
+    <nav
+      className={`hidden items-center justify-between xl:flex ${styles.nav}`}
+    >
       <Image
         src="/images/logo.svg"
         alt="Recipe Finder Logo"
         width={260}
         height={40}
       />
-      <ul className="flex gap-(--spacing-500)">
+      <ul className={`flex ${styles.navList}`}>
         {navLinks.map((link) => (
           <NavItems
             key={link.href}

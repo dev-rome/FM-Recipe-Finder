@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import Navbar from "../components/navbar/Navbar";
+import DesktopNav from "../components/navbar/DesktopNav";
 
 const meta = {
-  component: Navbar,
-  title: "Navigation/Navbar",
+  component: DesktopNav,
+  title: "Navigation/DesktopNav",
   tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
@@ -12,7 +12,7 @@ const meta = {
       appDirectory: true,
     },
   },
-} satisfies Meta<typeof Navbar>;
+} satisfies Meta<typeof DesktopNav>;
 
 export default meta;
 

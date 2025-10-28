@@ -1,0 +1,9 @@
+.nav {
+  border-bottom: 1px solid var(--neutral-300);
+  padding: var(--spacing-250) var(--spacing-800);
+  margin-bottom: var(--spacing-600);
+}
+
+.navList {
+  gap: var(--spacing-500);
+}

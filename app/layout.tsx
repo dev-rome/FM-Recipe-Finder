@@ -12,25 +12,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: Readonly<{ 
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`${nunito.variable} ${nunitoSans.variable} antialiased`}>
-        <div className="min-h-screen flex flex-col">
+        <div className="flex min-h-screen flex-col">
           <header>
             <Navbar />
           </header>
           <main className="flex-1">
-            <div className="container">
-              {children}
-            </div>
+            <div className="container">{children}</div>
           </main>
           <footer>
-            <div className="container">
-              {/* Footer content */}
-            </div>
+            <div className="container">{/* Footer content */}</div>
           </footer>
         </div>
       </body>

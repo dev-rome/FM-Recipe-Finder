@@ -1,0 +1,22 @@
+.nav {
+  border-bottom: 1px solid var(--neutral-300);
+  padding: var(--spacing-250) var(--spacing-200);
+  margin-bottom: var(--spacing-600);
+}
+
+.menuButton {
+  height: var(--spacing-500);
+  width: var(--spacing-500);
+  background-color: var(--neutral-300);
+}
+
+.dropdown {
+  background-color: var(--neutral-0);
+  border-radius: var(--radius-8);
+  padding: var(--spacing-100);
+  box-shadow: 0 12px 22px -12px rgba(57, 88, 82, 0.3);
+}
+
+.dropdownList {
+  gap: var(--spacing-250);
+}

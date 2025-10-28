@@ -19,3 +19,12 @@ export const BrowseRecipes: Story = {
     href: "/recipes",
   },
 };
+
+export const StartExploring: Story = {
+  args: {
+    children: "Start exploring",
+    label: "Start exploring recipes",
+    href: "/recipes",
+    variant: "secondary",
+  },
+};
