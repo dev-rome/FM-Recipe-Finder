@@ -1,3 +1,19 @@
+.homeSection {
+  padding-inline: var(--spacing-200);
+}
+
+@media screen and (min-width: 1024px) {
+  .homeSection {
+    padding-inline: var(--spacing-400);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .homeSection {
+    padding-inline: 0;
+  }
+}
+
 .heading {
   font-family: var(--font-nunito);
   font-size: var(--font-size-48);
@@ -5,6 +21,7 @@
   color: var(--neutral-900);
   line-height: 1.1;
 }
+
 @media screen and (min-width: 1280px) {
   .heading {
     font-size: var(--font-size-72);
@@ -49,10 +66,35 @@
 
 .card {
   background-color: var(--neutral-0);
-  padding: var(--spacing-125);
-  border-radius: var(--radius-12);
+  padding: var(--spacing-025);
+  border-radius: var(--radius-6);
+  position: relative;
+  z-index: 2;
 }
 
 .cardImage {
-  border-radius: var(--radius-12);
+  border-radius: var(--radius-6);
+  z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: var(--spacing-075);
+    border-radius: var(--radius-10);
+  }
+
+  .cardImage {
+    border-radius: var(--radius-10);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    padding: var(--spacing-125);
+    border-radius: var(--radius-12);
+  }
+
+  .cardImage {
+    border-radius: var(--radius-12);
+  }
 }

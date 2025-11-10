@@ -29,13 +29,5 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1192px;
-  padding: 0 1rem;
+  width: 100%;
 }
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding-inline: var(--spacing-400);
-  }
-}
-
-/* Page Grid Layout */

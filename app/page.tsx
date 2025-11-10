@@ -5,7 +5,9 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <section className="relative grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+      <section
+        className={`relative grid w-full grid-cols-1 md:grid-cols-4 xl:grid-cols-12 ${styles.homeSection}`}
+      >
         <div className="col-span-1 md:col-span-4 xl:col-start-3 xl:col-end-12 xl:text-center">
           <h1 className={styles.heading}>
             <span className={styles.headingHighlight}>Healthy</span> meals, zero
@@ -43,6 +45,12 @@ export default function Home() {
               className={`h-auto w-full object-cover ${styles.cardImage}`}
             />
           </picture>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+        <div className="col-span-1 md:col-span-4 xl:col-start-3 xl:col-end-12 xl:text-center">
+          <h2>What you&apos;ll get</h2>
         </div>
       </section>
     </>
