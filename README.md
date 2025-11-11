@@ -51,4 +51,4 @@ Users should be able to:
 
 - Website - [@devrome](https://jeromehaynes.com/)
 - Linkedin - [@devrome](https://www.linkedin.com/in/jerome-haynes/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/dev-rome)
+- Frontend Mentor - [@devrome](https://www.frontendmentor.io/profile/dev-rome)
