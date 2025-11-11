@@ -30,4 +30,17 @@ body {
   margin: 0 auto;
   max-width: 1192px;
   width: 100%;
+  padding-inline: var(--spacing-200);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-inline: var(--spacing-400);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-inline: 0;
+  }
 }
