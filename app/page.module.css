@@ -6,6 +6,12 @@
   line-height: 1.1;
 }
 
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: var(--font-size-64);
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .heading {
     font-size: var(--font-size-72);
@@ -109,7 +115,13 @@
 }
 
 .sectionSpacing {
-  margin-top: var(--spacing-800);
+  margin: var(--spacing-800) 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionSpacing {
+    margin-bottom: 0;
+  }
 }
 
 .sectionDivider {
@@ -120,5 +132,63 @@
   .sectionDivider {
     border: 1px solid var(--neutral-300);
     margin: var(--spacing-1200) 0;
+  }
+}
+
+.realLifeImage {
+  border-radius: var(--radius-10);
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeImage {
+    border-radius: var(--radius-16);
+  }
+}
+
+.realLifeTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeTitle {
+    font-size: var(--font-size-48);
+  }
+}
+
+.realLifeDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.realLifeDescriptionMargin {
+  margin: var(--spacing-250) 0;
+}
+
+.realLifeDescriptionHighlight {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeDescriptionHighlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .realLifeDescriptionHighlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 103px;
+    height: 10px;
+    background-color: var(--orange-500);
+    border-radius: var(--radius-6);
+    z-index: -1;
   }
 }

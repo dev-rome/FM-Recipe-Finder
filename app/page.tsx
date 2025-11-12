@@ -69,6 +69,47 @@ export default function Home() {
       </section>
 
       <hr className={styles.sectionDivider} />
+
+      <section className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+        <div className="col-span-1 md:col-span-4 xl:col-start-1 xl:col-end-13">
+          <div className="flex flex-col gap-y-8 md:gap-y-10 xl:flex-row xl:gap-x-12">
+            <div className="xl:self-center">
+              <h2 className={styles.realLifeTitle}>Built for real life</h2>
+              <p
+                className={`${styles.realLifeDescription} ${styles.realLifeDescriptionMargin}`}
+              >
+                Cooking shouldn’t be complicated. These recipes come in under{" "}
+                <span className={styles.realLifeDescriptionHighlight}>
+                  30 minutes
+                </span>{" "}
+                of active time, fit busy schedules, and taste good enough to
+                repeat.{" "}
+              </p>
+              <p className={styles.realLifeDescription}>
+                Whether you’re new to the kitchen or just need fresh ideas,
+                we’ve got you covered.
+              </p>
+            </div>
+            <picture>
+              <source
+                srcSet="/images/image-home-real-life-large.webp"
+                media="(min-width: 1025px)"
+              />
+              <source
+                srcSet="/images/image-home-real-life-small.webp"
+                media="(max-width: 1024px)"
+              />
+              <Image
+                src="/images/image-home-real-life-small.webp"
+                alt="home real life image"
+                width={1200}
+                height={530}
+                className={styles.realLifeImage}
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
