@@ -1,10 +1,4 @@
-export interface NavLink {
-  href: string;
-  children: string;
-  label?: string; // For accessibility
-}
-
-export const navLinks: NavLink[] = [
+export const navLinks = [
   {
     href: "/",
     children: "Home",
@@ -19,22 +13,6 @@ export const navLinks: NavLink[] = [
     href: "/recipes",
     children: "Recipes",
     label: "Browse all available recipes",
-  },
-];
-
-// You can also add other navigation-related constants here
-export const footerLinks: NavLink[] = [
-  {
-    href: "/privacy",
-    children: "Privacy Policy",
-  },
-  {
-    href: "/terms",
-    children: "Terms of Service",
-  },
-  {
-    href: "/contact",
-    children: "Contact Us",
   },
 ];
 

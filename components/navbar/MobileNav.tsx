@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { navLinks } from "@/constants/navigation";
-import NavItems from "./NavItems";
+
 import LinkButton from "../link-button/LinkButton";
+import NavItems from "./NavItems";
+import { navLinks } from "@/constants/navigation";
+
 import styles from "./MobileNav.module.css";
 
 export default function MobileNav() {

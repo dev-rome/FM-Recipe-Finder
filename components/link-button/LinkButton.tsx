@@ -1,17 +1,20 @@
 import Link from "next/link";
+
 import styles from "./LinkButton.module.css";
+
+interface LinkButtonProps {
+  children: React.ReactNode;
+  label: string;
+  href: string;
+  variant?: "primary" | "secondary";
+}
 
 const LinkButton = ({
   children,
   label,
   href,
   variant = "primary",
-}: {
-  children: string;
-  label: string;
-  href: string;
-  variant?: "primary" | "secondary";
-}) => {
+}: LinkButtonProps) => {
   return (
     <Link
       href={href}

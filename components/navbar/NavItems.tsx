@@ -1,15 +1,14 @@
 import Link from "next/link";
+
 import styles from "./NavItems.module.css";
 
-const NavItems = ({
-  href,
-  children,
-  isActive,
-}: {
+interface NavItemsProps {
   href: string;
   children: string;
   isActive: boolean;
-}) => {
+}
+
+const NavItems = ({ href, children, isActive }: NavItemsProps) => {
   return (
     <li>
       <Link

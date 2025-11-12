@@ -1,0 +1,31 @@
+.whatYoullGetItemImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-12);
+  width: 60px;
+  height: 60px;
+}
+
+.whatYoullGetItemTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-32);
+  font-weight: 700;
+  color: var(--neutral-900);
+  margin: var(--spacing-250) 0 var(--spacing-150);
+}
+
+@media screen and (min-width: 1024px) {
+  .whatYoullGetItemTitle {
+    margin: var(--spacing-300) 0 var(--spacing-150);
+  }
+}
+
+.whatYoullGetItemDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}

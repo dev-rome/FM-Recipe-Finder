@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { navLinks } from "@/constants/navigation";
-import NavItems from "./NavItems";
-import LinkButton from "../link-button/LinkButton";
 import { usePathname } from "next/navigation";
+
+import LinkButton from "../link-button/LinkButton";
+import NavItems from "./NavItems";
+import { navLinks } from "@/constants/navigation";
+
 import styles from "./DesktopNav.module.css";
 
 export default function DesktopNav() {

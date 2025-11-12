@@ -1,13 +1,16 @@
 import Image from "next/image";
+
 import LinkButton from "@/components/link-button/LinkButton";
+
+import WhatYoullGetItem from "@/components/what-youll-get/WhatYoullGetItem";
+import { whatYoullGetItems } from "@/data/whatYoullGetItems";
+
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-      <section
-        className="relative grid w-full grid-cols-1 md:grid-cols-4 xl:grid-cols-12"
-      >
+      <section className="relative grid w-full grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
         <Image
           src="/images/pattern-squiggle-1.svg"
           alt="Pattern Squiggle"
@@ -54,11 +57,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12 ">
-        <div className="col-span-1 md:col-span-4 xl:col-start-3 xl:col-end-12 xl:text-center">
-          <h2>What you&apos;ll get</h2>
+      <section className="mt-(--spacing-800) grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+        <div className="col-span-1 md:col-span-4 xl:col-start-1 xl:col-end-13 xl:text-center">
+          <h2 className={styles.featuresTitle}>What you&apos;ll get</h2>
+          <div className="grid grid-cols-1 gap-6 md:gap-8 xl:grid-cols-12">
+            {whatYoullGetItems.map((item) => (
+              <WhatYoullGetItem key={item.id} {...item} />
+            ))}
+          </div>
         </div>
       </section>
+
+      <hr className={styles.sectionDivider} />
     </>
   );
 }
