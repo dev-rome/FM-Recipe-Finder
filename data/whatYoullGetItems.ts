@@ -1,11 +1,28 @@
-export const whatYoullGetItems = [
+type WhatYoullGetItemLayout = "first" | "second" | "third";
+
+export interface WhatYoullGetItemData {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  layout: WhatYoullGetItemLayout;
+  imageSize?: {
+    width: number;
+    height: number;
+  };
+}
+
+export const whatYoullGetItems: WhatYoullGetItemData[] = [
   {
     id: 1,
     image: "/images/icon-whole-food-recipes.svg",
     title: "Whole-food recipes",
     description: "Each dish uses everyday, unprocessed ingredients.",
-    gridSpan: "xl:col-start-1 xl:col-end-5",
-    imageSize: { width: 23, height: 32 },
+    layout: "first",
+    imageSize: {
+      width: 23,
+      height: 32,
+    },
   },
   {
     id: 2,
@@ -13,8 +30,11 @@ export const whatYoullGetItems = [
     title: "Minimum fuss",
     description:
       "All recipes are designed to make eating healthy quick and easy.",
-    gridSpan: "xl:col-start-5 xl:col-end-9",
-    imageSize: { width: 40, height: 41 },
+    layout: "second",
+    imageSize: {
+      width: 40,
+      height: 41,
+    },
   },
   {
     id: 3,
@@ -22,7 +42,10 @@ export const whatYoullGetItems = [
     title: "Search in seconds",
     description:
       "Filter by name or ingredient and jump straight to the recipe you need.",
-    gridSpan: "xl:col-start-9 xl:col-end-13",
-    imageSize: { width: 40, height: 40 },
+    layout: "third",
+    imageSize: {
+      width: 40,
+      height: 40,
+    },
   },
 ];

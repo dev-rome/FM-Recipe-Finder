@@ -33,9 +33,7 @@ export default function DesktopNav() {
           </NavItems>
         ))}
       </ul>
-      <LinkButton label="Browse recipes" href="/recipes">
-        Browse recipes
-      </LinkButton>
+      <LinkButton label="Browse recipes" href="/recipes" />
     </nav>
   );
 }

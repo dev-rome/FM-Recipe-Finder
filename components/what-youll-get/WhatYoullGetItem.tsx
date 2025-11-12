@@ -1,32 +1,36 @@
 import Image from "next/image";
 
+import type { WhatYoullGetItemData } from "@/data/whatYoullGetItems";
+
 import styles from "./WhatYoullGetItem.module.css";
 
-interface WhatYoullGetItemProps {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-  gridSpan: string;
-  imageSize: { width: number; height: number };
-}
+type WhatYoullGetItemProps = Omit<WhatYoullGetItemData, "id">;
 
 const WhatYoullGetItem = ({
   image,
   title,
   description,
-  gridSpan,
+  layout,
   imageSize,
 }: WhatYoullGetItemProps) => {
+  const layoutClassName =
+    {
+      first: styles.itemFirst,
+      second: styles.itemSecond,
+      third: styles.itemThird,
+    }[layout] ?? "";
+
+  const { width, height } = imageSize ?? { width: 48, height: 48 };
+
   return (
-    <div className={gridSpan}>
-      <div className={`flex flex-col text-left`}>
+    <div className={`${styles.item} ${layoutClassName}`}>
+      <div className={styles.itemInner}>
         <div className={styles.whatYoullGetItemImageContainer}>
           <Image
             src={image}
             alt={title}
-            width={imageSize.width}
-            height={imageSize.height}
+            width={width}
+            height={height}
             className={styles.whatYoullGetItemImage}
           />
         </div>

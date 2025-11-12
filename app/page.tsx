@@ -30,9 +30,7 @@ export default function Home() {
             label="Start exploring"
             href="/recipes"
             variant="secondary"
-          >
-            Start exploring
-          </LinkButton>
+          />
         </div>
         <div
           className={`col-span-1 md:col-span-4 xl:col-start-1 xl:col-end-13 ${styles.card}`}
@@ -57,7 +55,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-(--spacing-800) grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+      <section
+        className={`${styles.sectionSpacing} grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12`}
+      >
         <div className="col-span-1 md:col-span-4 xl:col-start-1 xl:col-end-13 xl:text-center">
           <h2 className={styles.featuresTitle}>What you&apos;ll get</h2>
           <div className="grid grid-cols-1 gap-6 md:gap-8 xl:grid-cols-12">

@@ -108,6 +108,10 @@
   }
 }
 
+.sectionSpacing {
+  margin-top: var(--spacing-800);
+}
+
 .sectionDivider {
   border: none;
 }
