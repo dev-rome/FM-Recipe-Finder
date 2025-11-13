@@ -6,7 +6,7 @@ interface LinkButtonProps {
   children?: React.ReactNode;
   label: string;
   href: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "cta";
 }
 
 const LinkButton = ({

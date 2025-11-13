@@ -1,0 +1,98 @@
+.ctaSection {
+  position: relative;
+  background-color: var(--neutral-200);
+  padding: var(--spacing-600) var(--spacing-200);
+  text-align: center;
+  border-radius: var(--radius-16);
+  margin: var(--spacing-800) 0 var(--spacing-400);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .ctaSection {
+    padding: var(--spacing-1000) 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ctaSection {
+    padding: var(--spacing-1200) 0;
+  }
+}
+
+.patternKnifeContainer,
+.patternForkContainer {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .patternKnifeContainer,
+  .patternForkContainer {
+    display: block;
+  }
+
+  .patternKnifeContainer {
+    width: clamp(171px, 12vw, 338px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -50px;
+    right: -15px;
+    z-index: 1;
+  }
+
+  .patternForkContainer {
+    width: clamp(179px, 13vw, 314px);
+    aspect-ratio: 179/231;
+    position: absolute;
+    bottom: -45px;
+    left: -40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .patternKnifeContainer {
+    width: 338px;
+    top: 10px;
+    right: -65px;
+  }
+
+  .patternForkContainer {
+    width: 314px;
+    bottom: -45px;
+    left: -85px;
+  }
+}
+
+.ctaSectionContent {
+  position: relative;
+  z-index: 2;
+  margin-bottom: var(--spacing-400);
+}
+
+@media screen and (min-width: 768px) {
+  .ctaSectionContent {
+    margin-bottom: var(--spacing-500);
+  }
+}
+
+.ctaSectionHeading {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-150);
+}
+
+@media screen and (min-width: 768px) {
+  .ctaSectionHeading {
+    font-size: var(--font-size-48);
+  }
+}
+
+.ctaSectionDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}

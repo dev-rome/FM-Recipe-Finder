@@ -4,6 +4,7 @@ import LinkButton from "@/components/link-button/LinkButton";
 
 import WhatYoullGetItem from "@/components/what-youll-get/WhatYoullGetItem";
 import { whatYoullGetItems } from "@/data/whatYoullGetItems";
+import CtaSection from "@/components/cta-section/CtaSection";
 
 import styles from "./page.module.css";
 
@@ -49,7 +50,7 @@ export default function Home() {
               alt="Hero Image"
               width={1200}
               height={530}
-              className={`h-auto w-full object-cover ${styles.cardImage}`}
+              className={styles.cardImage}
             />
           </picture>
         </div>
@@ -108,6 +109,12 @@ export default function Home() {
               />
             </picture>
           </div>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-12">
+        <div className="col-span-1 md:col-span-4 xl:col-start-1 xl:col-end-13">
+          <CtaSection />
         </div>
       </section>
     </>
