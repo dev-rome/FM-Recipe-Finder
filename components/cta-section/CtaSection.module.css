@@ -10,6 +10,18 @@
 
 @media screen and (min-width: 768px) {
   .ctaSection {
+    margin: var(--spacing-1000) 0 var(--spacing-500);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ctaSection {
+    margin-top: var(--spacing-1200);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ctaSection {
     padding: var(--spacing-1000) 0;
   }
 }
