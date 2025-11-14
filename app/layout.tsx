@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { nunito, nunitoSans } from "./font";
 
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 import "./globals.css";
 
@@ -26,7 +27,7 @@ export default function RootLayout({
             <div className="container">{children}</div>
           </main>
           <footer>
-            <div className="container">{/* Footer content */}</div>
+            <Footer />
           </footer>
         </div>
       </body>

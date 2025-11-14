@@ -1,0 +1,29 @@
+.footerContainer {
+  max-width: 1192px;
+  width: 100%;
+  margin: 0 auto var(--spacing-125);
+}
+
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    margin: 0 auto var(--spacing-500);
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footerContainer {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footerContainer {
+    padding-inline: 0;
+  }
+}
+
+.footerText {
+  font-family: var(--font-nunito-sans);
+  color: var(--neutral-900);
+}
