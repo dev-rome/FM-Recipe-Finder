@@ -1,0 +1,49 @@
+.container {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-column: 1 / 5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    grid-column: 1 / 13;
+  }
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  .full {
+    grid-column: 1 / 5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .full {
+    grid-column: 1 / 13;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    grid-column: 3 / 12;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    grid-column: 3 / 12;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .centerText {
+    text-align: center;
+  }
+}

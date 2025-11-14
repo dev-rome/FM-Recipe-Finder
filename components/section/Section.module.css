@@ -1,0 +1,26 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.sectionSpacing {
+  margin: var(--spacing-800) 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionSpacing {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.realLifeImage {
+  border-radius: var(--radius-10);
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeImage {
+    border-radius: var(--radius-16);
+  }
+}
+
+.realLifeTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeTitle {
+    font-size: var(--font-size-48);
+  }
+}
+
+.realLifeDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.realLifeDescriptionMargin {
+  margin: var(--spacing-250) 0;
+}
+
+.realLifeDescriptionHighlight {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .realLifeDescriptionHighlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .realLifeDescriptionHighlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 103px;
+    height: 10px;
+    background-color: var(--orange-500);
+    border-radius: var(--radius-6);
+    z-index: -1;
+  }
+}

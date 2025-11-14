@@ -1,0 +1,14 @@
+.featuresTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+  margin-bottom: var(--spacing-400);
+}
+
+@media screen and (min-width: 1024px) {
+  .featuresTitle {
+    font-size: var(--font-size-48);
+    margin-bottom: var(--spacing-600);
+  }
+}
