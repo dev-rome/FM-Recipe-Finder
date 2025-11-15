@@ -8,17 +8,9 @@
   text-align: left;
 }
 
-@media screen and (min-width: 1280px) {
-  .itemFirst {
-    grid-column: 1 / 5;
-  }
-
-  .itemSecond {
-    grid-column: 5 / 9;
-  }
-
-  .itemThird {
-    grid-column: 9 / 13;
+@media screen and (min-width: 1035px) {
+  .item {
+    grid-column: auto;
   }
 }
 
@@ -47,9 +39,11 @@
   }
 }
 
+
 .whatYoullGetItemDescription {
   font-family: var(--font-nunito-sans);
   font-size: var(--font-size-20);
   font-weight: 500;
   color: var(--neutral-600);
 }
+

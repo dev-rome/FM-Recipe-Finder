@@ -9,8 +9,8 @@ const BuiltForRealLifeSection = () => {
   return (
     <Section>
       <Container>
-        <div className="flex flex-col gap-y-8 md:gap-y-10 xl:flex-row xl:gap-x-12">
-          <div className="xl:self-center">
+        <div className="flex flex-col gap-y-8 md:gap-y-10 lg:flex-row lg:gap-x-12">
+          <div className="lg:self-center">
             <h2 className={styles.realLifeTitle}>
               {builtForRealLifeContent.title}
             </h2>

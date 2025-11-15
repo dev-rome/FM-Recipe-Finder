@@ -25,11 +25,13 @@ const HeroSection = () => {
           {heroContent.titleRest}
         </h1>
         <p className={styles.description}>{heroContent.description}</p>
-        <LinkButton
-          label={heroContent.buttonLabel}
-          href={heroContent.buttonHref}
-          variant="secondary"
-        />
+        <div className={styles.buttonWrapper}>
+          <LinkButton
+            label={heroContent.buttonLabel}
+            href={heroContent.buttonHref}
+            variant="secondary"
+          />
+        </div>
       </Container>
       <Container variant="full" className={styles.card}>
         <ResponsiveImage
