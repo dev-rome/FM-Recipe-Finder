@@ -1,18 +1,17 @@
-import HeroSection from "@/components/hero-section/HeroSection";
-import WhatYoullGetSection from "@/components/what-youll-get-section/WhatYoullGetSection";
-import BuiltForRealLifeSection from "@/components/built-for-real-life-section/BuiltForRealLifeSection";
-import CtaSection from "@/components/cta-section/CtaSection";
-
-import styles from "./page.module.css";
+import Hero from "@/sections/Home/Hero";
+import Features from "@/sections/Home/Features";
+import BuiltForRealLife from "@/sections/Home/BuiltForRealLife";
+import Cta from "@/sections/Home/Cta";
+import SectionDivider from "@/components/section-divider/SectionDivider";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <WhatYoullGetSection />
-      <hr className={styles.sectionDivider} />
-      <BuiltForRealLifeSection />
-      <CtaSection />
+      <Hero />
+      <Features />
+      <SectionDivider />
+      <BuiltForRealLife />
+      <Cta />
     </>
   );
 }

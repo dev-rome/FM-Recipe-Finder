@@ -6,9 +6,9 @@ import Container from "@/components/container/Container";
 import Section from "@/components/section/Section";
 import { heroContent } from "@/constants/homeContent";
 
-import styles from "./HeroSection.module.css";
+import styles from "./Hero.module.css";
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <Section className={styles.heroSectionWrapper}>
       <Image
@@ -47,4 +47,5 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;
+

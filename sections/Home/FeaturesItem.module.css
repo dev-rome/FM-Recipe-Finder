@@ -14,7 +14,7 @@
   }
 }
 
-.whatYoullGetItemImageContainer {
+.featuresItemImageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
   height: 60px;
 }
 
-.whatYoullGetItemTitle {
+.featuresItemTitle {
   font-family: var(--font-nunito);
   font-size: var(--font-size-32);
   font-weight: 700;
@@ -34,13 +34,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .whatYoullGetItemTitle {
+  .featuresItemTitle {
     margin: var(--spacing-300) 0 var(--spacing-150);
   }
 }
 
-
-.whatYoullGetItemDescription {
+.featuresItemDescription {
   font-family: var(--font-nunito-sans);
   font-size: var(--font-size-20);
   font-weight: 500;

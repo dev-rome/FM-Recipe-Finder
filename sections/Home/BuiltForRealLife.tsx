@@ -3,9 +3,9 @@ import Container from "@/components/container/Container";
 import Section from "@/components/section/Section";
 import { builtForRealLifeContent } from "@/constants/homeContent";
 
-import styles from "./BuiltForRealLifeSection.module.css";
+import styles from "./BuiltForRealLife.module.css";
 
-const BuiltForRealLifeSection = () => {
+const BuiltForRealLife = () => {
   return (
     <Section>
       <Container>
@@ -52,4 +52,5 @@ const BuiltForRealLifeSection = () => {
   );
 };
 
-export default BuiltForRealLifeSection;
+export default BuiltForRealLife;
+

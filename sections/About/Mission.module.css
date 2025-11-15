@@ -1,0 +1,75 @@
+.ourMissionTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-20);
+  font-weight: 700;
+  color: var(--neutral-900);
+  background-color: var(--orange-500);
+  width: fit-content;
+  border-radius: var(--radius-6);
+  padding: var(--spacing-025) var(--spacing-075);
+  margin-bottom: var(--spacing-300);
+}
+
+.ourMissionHeading {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-300);
+}
+
+@media screen and (min-width: 768px) {
+  .ourMissionHeading {
+    font-size: var(--font-size-48);
+    max-width: 30ch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ourMissionHeading {
+    max-width: 35ch;
+  }
+}
+
+.ourMissionDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.ourMissionDescription:first-of-type {
+  margin-bottom: var(--spacing-200);
+}
+
+@media screen and (min-width: 1024px) {
+  .ourMissionDescription {
+    max-width: 65ch;
+  }
+}
+
+.ourMissionImage {
+  border-radius: var(--radius-16);
+}
+
+.patternSquiggleContainer {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .patternSquiggleContainer {
+    display: block;
+    position: absolute;
+    bottom: 110px;
+    right: -40px;
+    width: 118px;
+    height: 210px;
+    z-index: 1;
+  }
+}
+
+.patternSquiggle {
+  object-fit: contain;
+}

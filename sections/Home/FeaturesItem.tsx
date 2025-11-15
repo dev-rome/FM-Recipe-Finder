@@ -2,17 +2,17 @@ import Image from "next/image";
 
 import type { WhatYoullGetItemData } from "@/data/whatYoullGetItems";
 
-import styles from "./WhatYoullGetItem.module.css";
+import styles from "./FeaturesItem.module.css";
 
-type WhatYoullGetItemProps = Omit<WhatYoullGetItemData, "id">;
+type FeaturesItemProps = Omit<WhatYoullGetItemData, "id">;
 
-const WhatYoullGetItem = ({
+const FeaturesItem = ({
   image,
   title,
   description,
   layout,
   imageSize,
-}: WhatYoullGetItemProps) => {
+}: FeaturesItemProps) => {
   const layoutClassName =
     {
       first: styles.itemFirst,
@@ -25,20 +25,21 @@ const WhatYoullGetItem = ({
   return (
     <div className={`${styles.item} ${layoutClassName}`}>
       <div className={styles.itemInner}>
-        <div className={styles.whatYoullGetItemImageContainer}>
+        <div className={styles.featuresItemImageContainer}>
           <Image
             src={image}
             alt={title}
             width={width}
             height={height}
-            className={styles.whatYoullGetItemImage}
+            className={styles.featuresItemImage}
           />
         </div>
-        <h3 className={styles.whatYoullGetItemTitle}>{title}</h3>
-        <p className={styles.whatYoullGetItemDescription}>{description}</p>
+        <h3 className={styles.featuresItemTitle}>{title}</h3>
+        <p className={styles.featuresItemDescription}>{description}</p>
       </div>
     </div>
   );
 };
 
-export default WhatYoullGetItem;
+export default FeaturesItem;
+

@@ -5,6 +5,12 @@
 @media screen and (min-width: 768px) {
   .sectionDivider {
     border: 1px solid var(--neutral-300);
+    margin: var(--spacing-1000) 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionDivider {
     margin: var(--spacing-1200) 0;
   }
 }

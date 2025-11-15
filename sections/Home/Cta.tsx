@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import LinkButton from "../link-button/LinkButton";
+import LinkButton from "@/components/link-button/LinkButton";
+import Container from "@/components/container/Container";
+import Section from "@/components/section/Section";
 
-import styles from "./CtaSection.module.css";
-import Container from "../container/Container";
-import Section from "../section/Section";
+import styles from "./Cta.module.css";
 
-const CtaSection = () => {
+const Cta = () => {
   return (
     <Section>
       <Container className={styles.ctaSection}>
@@ -39,4 +39,5 @@ const CtaSection = () => {
   );
 };
 
-export default CtaSection;
+export default Cta;
+
