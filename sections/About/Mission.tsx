@@ -41,6 +41,7 @@ const Mission = () => {
             width={1200}
             height={530}
             className={styles.ourMissionImage}
+            priority={true}
           />
         </div>
       </Container>

@@ -8,6 +8,7 @@ interface ResponsiveImageProps {
   height: number;
   className?: string;
   breakpoint?: number;
+  priority?: boolean;
 }
 
 const ResponsiveImage = ({
@@ -18,6 +19,7 @@ const ResponsiveImage = ({
   height,
   className,
   breakpoint = 1025,
+  priority = false,
 }: ResponsiveImageProps) => {
   return (
     <picture>
@@ -29,6 +31,7 @@ const ResponsiveImage = ({
         width={width}
         height={height}
         className={className}
+        priority={priority}
       />
     </picture>
   );

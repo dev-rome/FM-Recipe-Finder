@@ -15,6 +15,7 @@ const Hero = () => {
         src={heroContent.backgroundPattern.src}
         alt={heroContent.backgroundPattern.alt}
         fill
+        priority={true}
         className={styles.backgroundSquiggle}
       />
       <Container variant="hero" centerText>
@@ -41,6 +42,7 @@ const Hero = () => {
           width={heroContent.heroImage.width}
           height={heroContent.heroImage.height}
           className={styles.cardImage}
+          priority={true}
         />
       </Container>
     </Section>
