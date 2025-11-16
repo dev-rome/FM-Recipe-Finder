@@ -1,10 +1,10 @@
 .sectionDivider {
-  border: none;
+  border: 1px solid var(--neutral-300);
+  margin: var(--spacing-600) 0;
 }
 
 @media screen and (min-width: 768px) {
   .sectionDivider {
-    border: 1px solid var(--neutral-300);
     margin: var(--spacing-1000) 0;
   }
 }
