@@ -1,7 +1,7 @@
 import ResponsiveImage from "@/components/responsive-image/ResponsiveImage";
 import Container from "@/components/container/Container";
 import Section from "@/components/section/Section";
-import { builtForRealLifeContent } from "@/constants/homeContent";
+import { builtForRealLifeContent } from "@/data/homeContent";
 
 import styles from "./BuiltForRealLife.module.css";
 
@@ -53,4 +53,3 @@ const BuiltForRealLife = () => {
 };
 
 export default BuiltForRealLife;
-

@@ -2,7 +2,7 @@ import FeaturesItem from "./FeaturesItem";
 import Container from "@/components/container/Container";
 import Section from "@/components/section/Section";
 import { whatYoullGetItems } from "@/data/whatYoullGetItems";
-import { whatYoullGetContent } from "@/constants/homeContent";
+import { whatYoullGetContent } from "@/data/homeContent";
 
 import styles from "./Features.module.css";
 
@@ -22,4 +22,3 @@ const Features = () => {
 };
 
 export default Features;
-

@@ -14,35 +14,20 @@
   }
 }
 
-.full {
-  grid-column: 1 / -1;
-}
-
-@media screen and (min-width: 768px) {
-  .full {
-    grid-column: 1 / 5;
-  }
-}
-
 @media screen and (min-width: 1280px) {
-  .full {
-    grid-column: 1 / 13;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .content {
-    grid-column: 3 / 12;
-  }
-}
-
-@media screen and (min-width: 1280px) {
+  .content,
   .hero {
     grid-column: 3 / 12;
   }
-}
 
-@media screen and (min-width: 1280px) {
+  .sectionTitle {
+    grid-column: 1 / 5;
+  }
+
+  .itemsGrid {
+    grid-column: 5 / -1;
+  }
+
   .centerText {
     text-align: center;
   }

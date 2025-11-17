@@ -1,11 +1,10 @@
 import { ReactNode } from "react";
-
 import styles from "./Container.module.css";
 
 interface ContainerProps {
   children: ReactNode;
   className?: string;
-  variant?: "full" | "content" | "hero";
+  variant?: "full" | "content" | "hero" | "sectionTitle" | "itemsGrid";
   centerText?: boolean;
 }
 

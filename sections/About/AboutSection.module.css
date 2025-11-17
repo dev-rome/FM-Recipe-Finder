@@ -1,0 +1,39 @@
+.sectionTitle {
+  font-family: var(--font-nunito);
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-500);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: var(--font-size-48);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sectionTitle {
+    margin-bottom: 0;
+  }
+}
+
+.itemsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+@media screen and (min-width: 768px) {
+  .itemsGrid {
+    gap: var(--spacing-400);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .itemsGrid {
+    gap: var(--spacing-600);
+  }
+}

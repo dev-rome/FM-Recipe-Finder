@@ -4,7 +4,7 @@ import LinkButton from "@/components/link-button/LinkButton";
 import ResponsiveImage from "@/components/responsive-image/ResponsiveImage";
 import Container from "@/components/container/Container";
 import Section from "@/components/section/Section";
-import { heroContent } from "@/constants/homeContent";
+import { heroContent } from "@/data/homeContent";
 
 import styles from "./Hero.module.css";
 
@@ -34,7 +34,7 @@ const Hero = () => {
           />
         </div>
       </Container>
-      <Container variant="full" className={styles.card}>
+      <Container className={styles.card}>
         <ResponsiveImage
           smallSrc={heroContent.heroImage.small}
           largeSrc={heroContent.heroImage.large}
@@ -50,4 +50,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

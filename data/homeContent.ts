@@ -47,3 +47,4 @@ export const builtForRealLifeContent = {
     height: 530,
   },
 };
+
