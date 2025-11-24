@@ -91,3 +91,30 @@ export const foodPhilosophyItems: AboutItem[] = [
       "Short ingredient lists cut down on food waste and carbon footprint, while plant-forward dishes keep things planet-friendly.",
   },
 ];
+
+export const beyondThePlate = {
+  title: "Beyond the plate",
+  description:
+    "We believe food is a catalyst for community and well-being. By sharing approachable recipes, we hope to:",
+  points: [
+    {
+      id: 1,
+      text: "Encourage family dinners and social cooking.",
+    },
+    {
+      id: 2,
+      text: "Reduce reliance on single-use packaging and delivery waste.",
+    },
+    {
+      id: 3,
+      text: "Spark curiosity about seasonal produce and local agriculture.",
+    },
+  ],
+  image: {
+    small: "/images/image-about-beyond-the-plate-small.webp",
+    large: "/images/image-about-beyond-the-plate-large.webp",
+    alt: "Beyond the plate",
+    width: 1200,
+    height: 800,
+  },
+};

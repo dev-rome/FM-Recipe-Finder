@@ -15,7 +15,7 @@ const AboutItem = ({ icon, iconSize, title, description }: AboutItemProps) => {
         <div className={styles.iconContainer}>
           <Image
             src={icon}
-            alt=""
+            alt="icon bullet point"
             width={width}
             height={height}
             className={styles.icon}

@@ -14,7 +14,7 @@ export default function DesktopNav() {
 
   return (
     <nav
-      className={`hidden items-center justify-between xl:flex ${styles.nav}`}
+      className={`hidden items-center justify-between min-[1025px]:flex ${styles.nav}`}
     >
       <Image
         src="/images/logo.svg"

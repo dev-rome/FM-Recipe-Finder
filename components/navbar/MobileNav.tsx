@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import LinkButton from "../link-button/LinkButton";
@@ -16,9 +16,24 @@ export default function MobileNav() {
     setIsOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1025) {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <nav
-      className={`relative flex items-center justify-between xl:hidden ${styles.nav}`}
+      className={`relative flex items-center justify-between min-[1025px]:hidden ${styles.nav}`}
     >
       <Image
         src="/images/logo.svg"
@@ -43,12 +58,21 @@ export default function MobileNav() {
         >
           <ul className={`flex flex-col ${styles.dropdownList}`}>
             {navLinks.map((link) => (
-              <NavItems key={link.href} href={link.href} isActive={false}>
+              <NavItems
+                key={link.href}
+                href={link.href}
+                isActive={false}
+                onClick={closeMenu}
+              >
                 {link.children}
               </NavItems>
             ))}
           </ul>
-          <LinkButton label="Browse recipes" href="/recipes" />
+          <LinkButton
+            label="Browse recipes"
+            href="/recipes"
+            onClick={closeMenu}
+          />
         </div>
       )}
     </nav>

@@ -43,8 +43,8 @@ export const builtForRealLifeContent = {
     small: "/images/image-home-real-life-small.webp",
     large: "/images/image-home-real-life-large.webp",
     alt: "home real life image",
-    width: 1200,
-    height: 530,
+    width: 1270,
+    height: 900,
   },
 };
 

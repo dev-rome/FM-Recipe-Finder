@@ -7,6 +7,7 @@ interface LinkButtonProps {
   label: string;
   href: string;
   variant?: "primary" | "secondary" | "cta";
+  onClick?: () => void;
 }
 
 const LinkButton = ({
@@ -14,6 +15,7 @@ const LinkButton = ({
   label,
   href,
   variant = "primary",
+  onClick,
 }: LinkButtonProps) => {
   const content = children ?? label;
 
@@ -22,6 +24,7 @@ const LinkButton = ({
       href={href}
       aria-label={label}
       className={`${styles.linkButton} ${styles[variant]}`}
+      onClick={onClick}
     >
       {content}
     </Link>
