@@ -1,0 +1,129 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-100);
+  width: 100%;
+  font-size: var(--font-size-18);
+  font-weight: 600;
+  color: var(--neutral-900);
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-10);
+  padding: var(--spacing-125) var(--spacing-200);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdownTrigger:hover {
+  border-color: var(--neutral-900);
+}
+
+.dropdownTrigger:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.dropdownTrigger:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
+  border-color: var(--neutral-900);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + var(--spacing-100));
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  background-color: var(--neutral-0);
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-8);
+  padding: var(--spacing-075) 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-100);
+  padding: var(--spacing-100) var(--spacing-200);
+  font-size: var(--font-size-18);
+  font-weight: 600;
+  color: var(--dropdown-text);
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdownItem:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.dropdownItem:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: -5px;
+  border-radius: var(--radius-10);
+}
+
+.dropdownItem input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--teal-500);
+  flex-shrink: 0;
+  border: 2px solid var(--neutral-300);
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  outline: none;
+}
+
+.dropdownItem input[type="radio"]:focus {
+  outline: none;
+}
+
+.dropdownItem input[type="radio"]:checked {
+  border: 2px solid var(--neutral-900);
+}
+
+.dropdownItem input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--neutral-900);
+}
+
+.clearBtn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: var(--spacing-100) var(--spacing-200);
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-16);
+  font-weight: 500;
+  color: var(--dropdown-text);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clearBtn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.clearBtn:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: -5px;
+  border-radius: var(--radius-10);
+}

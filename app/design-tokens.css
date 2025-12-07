@@ -14,6 +14,9 @@
   --indigo-500: rgb(105, 125, 219);
   --pink-500: rgb(249, 211, 189);
 
+  /* Dropdown colors */
+  --dropdown-text: #293241;
+
   /* Font Sizes */
   --font-size-72: 4.5rem;
   --font-size-64: 4rem;
