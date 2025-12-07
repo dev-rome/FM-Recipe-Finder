@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import Section from "@/components/section/Section";
 import Container from "@/components/container/Container";
 import { RadioDropdown } from "@/components/radio-dropdown/RadioDropdown";
+import { SearchInput } from "@/components/search-input/SearchInput";
 
 import styles from "./Recipes.module.css";
 
@@ -43,16 +42,7 @@ export default function Recipes() {
                 ]}
               />
             </div>
-            <div className={styles.searchContainer} role="search">
-              <Image
-                src="/images/icon-search.svg"
-                alt="Search"
-                width={20}
-                height={20}
-                className={styles.searchIcon}
-              />
-              <input type="text" placeholder="Search by name or ingredient…" />
-            </div>
+            <SearchInput />
           </div>
         </Container>
       </Section>
