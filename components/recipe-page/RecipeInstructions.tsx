@@ -11,8 +11,8 @@ const RecipeInstructions = ({ instructions }: RecipeInstructionsProps) => {
     <div className="flex flex-col gap-4">
       <h2 className={styles.recipeInstructionsTitle}>Instructions</h2>
       <ul className={styles.recipeInstructionsList}>
-        {instructions.map((instruction, index) => (
-          <li key={index} className={styles.recipeInstructionItem}>
+        {instructions.map((instruction) => (
+          <li key={instruction} className={styles.recipeInstructionItem}>
             <Image
               src="/images/icon-bullet-point.svg"
               alt=""

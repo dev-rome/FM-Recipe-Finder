@@ -30,8 +30,8 @@ const MoreRecipes = ({ currentRecipeSlug }: MoreRecipesProps) => {
       <Container>
         <h2 className={styles.sectionTitle}>More recipes</h2>
         <div className="mb-12 grid grid-cols-1 gap-8 lg:mb-24 lg:grid-cols-3">
-          {otherRecipes.map((recipe, id) => (
-            <RecipeCard key={id} recipe={recipe} />
+          {otherRecipes.map((recipe) => (
+            <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
         </div>
       </Container>
