@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import LinkButton from "../link-button/LinkButton";
@@ -35,12 +36,14 @@ export default function MobileNav() {
     <nav
       className={`relative flex items-center justify-between min-[1025px]:hidden ${styles.nav}`}
     >
-      <Image
-        src="/images/logo.svg"
-        alt="Recipe Finder Logo"
-        width={242}
-        height={32}
-      />
+      <Link href="/">
+        <Image
+          src="/images/logo.svg"
+          alt="Recipe Finder Logo"
+          width={242}
+          height={32}
+        />
+      </Link>
       <button
         className={`flex items-center justify-center ${styles.menuButton}`}
         onClick={handleToggle}

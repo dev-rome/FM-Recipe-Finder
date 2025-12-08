@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -16,12 +17,14 @@ export default function DesktopNav() {
     <nav
       className={`hidden items-center justify-between min-[1025px]:flex ${styles.nav}`}
     >
+      <Link href="/">
       <Image
         src="/images/logo.svg"
         alt="Recipe Finder Logo"
         width={260}
         height={40}
-      />
+        />
+        </Link>
       <ul className={`flex ${styles.navList}`}>
         {navLinks.map((link) => (
           <NavItems
