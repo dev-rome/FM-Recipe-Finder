@@ -1,4 +1,4 @@
-import recipesData from "./data.json";
+import recipesData from "./recipeData.json";
 
 export interface Recipe {
   id: number;
