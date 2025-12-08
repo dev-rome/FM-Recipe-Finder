@@ -1,0 +1,18 @@
+.recipeImageContainer {
+  align-self: flex-start;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .recipeImageContainer {
+    width: 540px;
+    flex-shrink: 0;
+  }
+}
+
+.recipeImage {
+  object-fit: cover;
+  border-radius: var(--radius-10);
+}

@@ -1,0 +1,15 @@
+.recipeLink,
+.recipeLinkSeparator,
+.recipeText {
+  font-size: var(--font-size-16);
+  font-weight: 600;
+}
+
+.recipeLink,
+.recipeLinkSeparator {
+  color: var(--neutral-600);
+}
+
+.recipeText {
+  color: var(--neutral-900);
+}

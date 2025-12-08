@@ -4,12 +4,18 @@ interface RecipeInfoProps {
   servings: number;
   prepMinutes: number;
   cookMinutes: number;
+  className?: string;
+  itemClassName?: string;
+  liClassName?: string;
 }
 
 const RecipeInfo = ({
   servings,
   prepMinutes,
   cookMinutes,
+  className,
+  itemClassName,
+  liClassName,
 }: RecipeInfoProps) => {
   const infoItems = [
     {
@@ -33,15 +39,21 @@ const RecipeInfo = ({
     },
   ];
 
+  const baseClasses = "flex list-none flex-wrap gap-x-4 gap-y-2 md:flex-nowrap";
+  const defaultClasses = className ? "" : "lg:flex-wrap";
+
   return (
-    <ul className="flex list-none flex-wrap gap-x-4 gap-y-2 md:flex-nowrap lg:flex-wrap">
+    <ul className={`${baseClasses} ${defaultClasses} ${className || ""}`}>
       {infoItems.map((item) => (
-        <li key={item.iconAlt} className={item.liClassName || ""}>
+        <li
+          key={item.iconAlt}
+          className={`${item.liClassName || ""} ${liClassName || ""}`}
+        >
           <RecipeInfoItem
             icon={item.icon}
             iconAlt={item.iconAlt}
             label={item.label}
-            className={item.itemClassName}
+            className={`${item.itemClassName} ${itemClassName || ""}`}
           />
         </li>
       ))}

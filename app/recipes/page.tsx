@@ -1,7 +1,7 @@
 import RecipesHero from "@/sections/Recipes/RecipesHero";
 import RecipesFilters from "@/sections/Recipes/RecipesFilters";
 import RecipesGrid from "@/sections/Recipes/RecipesGrid";
-import SectionDividerLg from "@/components/section-divider/SectionDividerLg";
+import FooterDivider from "@/components/section-divider/FooterDivider";
 
 export default function Recipes() {
   return (
@@ -9,7 +9,7 @@ export default function Recipes() {
       <RecipesHero />
       <RecipesFilters />
       <RecipesGrid />
-      <SectionDividerLg />
+      <FooterDivider />
     </>
   );
 }

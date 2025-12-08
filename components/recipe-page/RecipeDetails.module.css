@@ -1,0 +1,33 @@
+.recipeTitle {
+  font-size: var(--font-size-40);
+  font-weight: 800;
+  color: var(--neutral-900);
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  .recipeTitle {
+    font-size: var(--font-size-48);
+  }
+}
+
+.recipeDescription {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.recipeInfo {
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .recipeInfo {
+    flex-wrap: nowrap;
+  }
+
+  .recipeInfoItem {
+    flex-basis: auto;
+  }
+}

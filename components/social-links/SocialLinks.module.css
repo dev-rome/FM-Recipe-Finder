@@ -1,13 +1,13 @@
 .socialLink:hover {
-    opacity: 0.7;   
+  opacity: 0.7;
 }
 
 .socialLink:focus {
-    outline: none;
+  outline: none;
 }
 
 .socialLink:focus-visible {
-    outline: 3px solid var(--neutral-900);
-    outline-offset: 3px;
-    border-radius: var(--radius-4);
+  outline: 3px solid var(--neutral-900);
+  outline-offset: 3px;
+  border-radius: var(--radius-4);
 }

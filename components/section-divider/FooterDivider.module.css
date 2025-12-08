@@ -1,9 +1,9 @@
-.sectionDividerLg {
+.footerDivider {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .sectionDividerLg {
+  .footerDivider {
     display: block;
     border: 1px solid var(--neutral-300);
     margin-bottom: var(--spacing-500);

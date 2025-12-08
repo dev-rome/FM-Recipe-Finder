@@ -1,0 +1,29 @@
+.recipeIngredientsTitle {
+  font-size: var(--font-size-24);
+  font-weight: 700;
+  color: var(--neutral-900);
+}
+
+.recipeIngredientsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.recipeIngredientItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-100);
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  color: var(--neutral-600);
+}
+
+.recipeIngredientBullet {
+  flex-shrink: 0;
+  margin-block: 5px;
+}
