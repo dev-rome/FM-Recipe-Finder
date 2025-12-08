@@ -14,15 +14,25 @@ interface RadioDropdownProps {
   label: string;
   options: Option[];
   onChange?: (value: string) => void;
+  defaultValue?: string;
 }
 
 const RadioDropdown = ({
   label,
   options,
   onChange,
+  defaultValue,
 }: RadioDropdownProps) => {
   const [open, setOpen] = useState<boolean>(false);
-  const [value, setValue] = useState<string>(options[0]?.value || "");
+  const [value, setValue] = useState<string>(
+    defaultValue || options[0]?.value || "",
+  );
+
+  useEffect(() => {
+    if (defaultValue !== undefined) {
+      setValue(defaultValue);
+    }
+  }, [defaultValue]);
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -42,6 +52,7 @@ const RadioDropdown = ({
 
   const handleSelect = (val: string) => {
     setValue(val);
+    setOpen(false);
     if (onChange) onChange(val);
   };
 
