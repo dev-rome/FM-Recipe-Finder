@@ -24,7 +24,6 @@ const ResponsiveImage = ({
   return (
     <picture>
       <source srcSet={largeSrc} media={`(min-width: ${breakpoint}px)`} />
-      <source srcSet={smallSrc} media={`(max-width: ${breakpoint - 1}px)`} />
       <Image
         src={smallSrc}
         alt={alt}

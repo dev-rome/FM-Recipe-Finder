@@ -1,0 +1,11 @@
+.sectionDividerLg {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .sectionDividerLg {
+    display: block;
+    border: 1px solid var(--neutral-300);
+    margin-bottom: var(--spacing-500);
+  }
+}

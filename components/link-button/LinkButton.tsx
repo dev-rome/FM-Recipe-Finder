@@ -6,7 +6,7 @@ interface LinkButtonProps {
   children?: React.ReactNode;
   label: string;
   href: string;
-  variant?: "primary" | "secondary" | "cta";
+  variant?: "primary" | "secondary" | "cta" | "viewRecipe";
   onClick?: () => void;
 }
 

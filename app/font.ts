@@ -10,9 +10,9 @@ export const nunito = Nunito({
 });
 
 export const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans", 
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: ["400", "600", "700"],
   display: "swap",
   preload: false,
   fallback: ["system-ui", "arial"],

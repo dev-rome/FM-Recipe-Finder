@@ -50,3 +50,12 @@
     margin-top: var(--spacing-250);
   }
 }
+
+.linkButton.viewRecipe {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-16);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+}

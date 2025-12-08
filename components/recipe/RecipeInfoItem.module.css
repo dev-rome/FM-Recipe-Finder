@@ -1,0 +1,12 @@
+.recipeInfoItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-100);
+}
+
+.recipeInfoItemText {
+  font-family: var(--font-nunito-sans);
+  font-size: var(--font-size-16);
+  font-weight: 500;
+  color: var(--neutral-900);
+}

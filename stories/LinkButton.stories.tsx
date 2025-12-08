@@ -28,3 +28,13 @@ export const StartExploring: Story = {
     variant: "secondary",
   },
 };
+
+
+export const ViewRecipe: Story = {
+  args: {
+    children: "View recipe",
+    label: "View recipe",
+    href: "/recipes/one-pan-lemon-garlic-salmon-with-asparagus",
+    variant: "viewRecipe",
+  },
+};
