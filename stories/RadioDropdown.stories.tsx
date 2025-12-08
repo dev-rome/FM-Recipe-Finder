@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { RadioDropdown } from "../components/radio-dropdown/RadioDropdown";
+import RadioDropdown from "../components/radio-dropdown/RadioDropdown";
 
 const meta = {
   component: RadioDropdown,

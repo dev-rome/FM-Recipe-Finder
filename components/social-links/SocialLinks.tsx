@@ -2,13 +2,13 @@ import Image from "next/image";
 
 import styles from "./SocialLinks.module.css";
 
-type SocialLinksProps = {
+interface SocialLinksProps {
   href: string;
   icon: string;
   label: string;
   width?: number;
   height?: number;
-};
+}
 
 const SocialLinks = ({
   href,

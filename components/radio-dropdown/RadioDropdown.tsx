@@ -10,17 +10,17 @@ type Option = {
   value: string;
 };
 
-type RadioDropdownProps = {
+interface RadioDropdownProps {
   label: string;
   options: Option[];
   onChange?: (value: string) => void;
-};
+}
 
-export function RadioDropdown({
+const RadioDropdown = ({
   label,
   options,
   onChange,
-}: RadioDropdownProps) {
+}: RadioDropdownProps) => {
   const [open, setOpen] = useState<boolean>(false);
   const [value, setValue] = useState<string>(options[0]?.value || "");
 
@@ -95,4 +95,6 @@ export function RadioDropdown({
       )}
     </div>
   );
-}
+};
+
+export default RadioDropdown;

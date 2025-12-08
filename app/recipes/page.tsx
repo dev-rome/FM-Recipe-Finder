@@ -1,7 +1,7 @@
 import Section from "@/components/section/Section";
 import Container from "@/components/container/Container";
-import { RadioDropdown } from "@/components/radio-dropdown/RadioDropdown";
-import { SearchInput } from "@/components/search-input/SearchInput";
+import RadioDropdown from "@/components/radio-dropdown/RadioDropdown";
+import SearchInput from "@/components/search-input/SearchInput";
 
 import styles from "./Recipes.module.css";
 

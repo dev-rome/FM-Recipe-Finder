@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { SearchInput } from "../components/search-input/SearchInput";
+import SearchInput from "../components/search-input/SearchInput";
 
 const meta = {
   component: SearchInput,

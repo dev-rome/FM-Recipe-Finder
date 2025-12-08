@@ -2,19 +2,19 @@ import Image from "next/image";
 
 import styles from "./SearchInput.module.css";
 
-type SearchInputProps = {
+interface SearchInputProps {
   placeholder?: string;
   value?: string;
   defaultValue?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-};
+}
 
-export function SearchInput({
+const SearchInput = ({
   placeholder = "Search by name or ingredient…",
   value,
   defaultValue,
   onChange,
-}: SearchInputProps) {
+}: SearchInputProps) => {
   return (
     <div className={styles.searchContainer} role="search">
       <Image
@@ -33,4 +33,6 @@ export function SearchInput({
       />
     </div>
   );
-}
+};
+
+export default SearchInput;
