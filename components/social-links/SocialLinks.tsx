@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import styles from "./SocialLinks.module.css";
+
 type SocialLinksProps = {
   href: string;
   icon: string;
@@ -16,7 +18,13 @@ const SocialLinks = ({
   height,
 }: SocialLinksProps) => {
   return (
-    <a href={href} aria-label={label} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      aria-label={label}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.socialLink}
+    >
       <Image src={icon} alt={label} width={width} height={height} />
     </a>
   );
