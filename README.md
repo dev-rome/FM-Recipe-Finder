@@ -4,13 +4,15 @@ This is a solution to the [Recipe finder website challenge on Frontend Mentor](h
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+- [Frontend Mentor - Recipe finder website solution](#frontend-mentor---recipe-finder-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -32,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Coming Soon
-- Live Site URL: Coming Soon
+- Solution URL: [Recipe Finder Solution](https://www.frontendmentor.io/solutions/recipe-finder-built-with-nextjs-tailwind-typescript-and-storybook-0DJDzwvyl_)
+- Live Site URL: [Recipe Finder](https://fm-recipe-finder.vercel.app/)
 
 ## My process
 
@@ -45,7 +47,9 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
 - [Tailwind](https://tailwindcss.com/) - For styles
+- [Storybook](https://storybook.js.org/) - For component development and testing
 
 ## Author
 
