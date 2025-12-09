@@ -6,6 +6,9 @@ const meta = {
   component: RadioDropdown,
   title: "Components/RadioDropdown",
   tags: ["autodocs"],
+  argTypes: {
+    onChange: { action: "changed" },
+  },
 } satisfies Meta<typeof RadioDropdown>;
 
 export default meta;
@@ -19,7 +22,6 @@ export const MaxPrepTime: Story = {
       { label: "0 minutes", value: "0" },
       { label: "5 minutes", value: "5" },
       { label: "10 minutes", value: "10" },
-      { label: "15 minutes", value: "15" },
     ],
   },
 };
@@ -37,3 +39,14 @@ export const MaxCookTime: Story = {
   },
 };
 
+export const WithDefaultValue: Story = {
+  args: {
+    label: "Max Prep Time",
+    options: [
+      { label: "0 minutes", value: "0" },
+      { label: "5 minutes", value: "5" },
+      { label: "10 minutes", value: "10" },
+    ],
+    defaultValue: "5",
+  },
+};

@@ -11,6 +11,9 @@ const meta = {
       appDirectory: true,
     },
   },
+  argTypes: {
+    onChange: { action: "changed" },
+  },
 } satisfies Meta<typeof SearchInput>;
 
 export default meta;
@@ -26,7 +29,13 @@ export const Default: Story = {
 export const WithValue: Story = {
   args: {
     placeholder: "Search by name or ingredient…",
-    defaultValue: "chicken",
+    value: "chicken",
   },
 };
 
+export const Controlled: Story = {
+  args: {
+    placeholder: "Search by name or ingredient…",
+    value: "tomato",
+  },
+};
